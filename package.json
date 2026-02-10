@@ -16,16 +16,11 @@
     "yargs-parser": "13.1.2"
   },
   "engines": {
-    "node": "16.x",
-  "npm": "8.x"
+    "node": "25.5.0",
+    "npm": "11.8.0"
   },
   "private": true,
   "overrides": {
     "@types/minimatch": "5.1.2"
-  },
-  "scripts": {
-    "preinstall": "npm i -g npm@8",
-    "build": "ojet build --release",
-    "start": "ojet serve"
   }
 }
