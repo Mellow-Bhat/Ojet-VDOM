@@ -15,10 +15,6 @@
     "underscore": "^1.10.2",
     "yargs-parser": "13.1.2"
   },
-  "engines": {
-    "node": "24.x",
-    "npm": "11.x"
-  },
   "private": true,
   "overrides": {
     "@types/minimatch": "5.1.2"
