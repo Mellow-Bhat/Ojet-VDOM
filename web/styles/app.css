@@ -1,0 +1,135 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+.demo-oracle-icon {
+    width:137px;
+    height:18px;
+    content:url("images/oracle_logo.svg")
+}
+
+html:not([dir="rtl"]) .demo-oracle-icon {
+    padding-right:4px
+}
+
+html[dir="rtl"] .demo-oracle-icon {
+    padding-left:4px
+}
+
+.demo-oracle-icon:before {
+    display:inline
+}
+
+.demo-appheader-avatar {
+    width:24px;
+    height:24px
+}
+
+.demo-appheader-avatar:before {
+    content:url("images/avatar_24px.png")
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .demo-appheader-avatar:before {
+        content:url("images/avatar_24px_2x.png");
+        -webkit-transform:translate(-25%, -25%) scale(0.5);
+        transform:translate(-25%, -25%) scale(0.5)
+    }
+}
+
+/* ------------------------------
+   E-commerce demo styles
+   ------------------------------ */
+
+.ecom-header {
+  border-bottom: 1px solid var(--oj-core-divider-color, #e2e2e2);
+}
+
+.ecom-cart-pill {
+  border: 1px solid var(--oj-core-divider-color, #e2e2e2);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: var(--oj-core-bg-color, #fff);
+}
+
+.ecom-cart-count {
+  font-weight: 600;
+}
+
+.ecom-error {
+  color: var(--oj-core-danger-1, #b00020);
+}
+
+.ecom-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .ecom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .ecom-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ecom-product-card {
+  border: 1px solid var(--oj-core-divider-color, #e2e2e2);
+  border-radius: 12px;
+  background: var(--oj-core-bg-color, #fff);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.ecom-product-imageWrap {
+  background: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--oj-core-divider-color, #e2e2e2);
+}
+
+.ecom-product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.ecom-product-body {
+  padding: 12px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ecom-product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.5em;
+}
+
+.ecom-product-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  color: var(--oj-core-text-color-secondary, #555);
+}
+
+.ecom-add-btn {
+  width: 100%;
+}
